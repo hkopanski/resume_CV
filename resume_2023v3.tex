@@ -1,0 +1,278 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PlushCV - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (11/28/2021)
+%
+% Author:
+% Shubham Mazumder (http://mazumder.me)
+%
+% Hacked together from:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add more icon options 
+% 4. Fix hacky left alignment on contact line
+% 5. Remove Hacky fix for awkward extra vertical space
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Icons:
+%%Main: https://icons8.com/icons/carbon-copy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{plushcv}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Halid}{Kopanski}{Automation Engineer}
+{\contactline
+{\href{}{}}
+{\href{https://github.com/hkopanski}{hkopanski}}
+{\href{https://www.linkedin.com/in/halidkopanski/}{Halid Kopanski}}
+{\href{mailto:halid.kopanski@icloud.net}{halid.kopanski@icloud.net}}
+{\href{tel:919-807-9158}{919-807-9158}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.70\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Biogen}
+\descript{| Senior Automation Engineer}
+\location{Mar 2020 – Current | RTP, NC}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\sectionsep
+  \item {Control systems design, validation, maintenance, troubleshooting, and administration}
+  \item {Supported daily manufacturing and was automation subject matter expert for projects}  
+  \item {Main skills: Allen Bradley PLC/PAC, FactoryTalk View SCADA, Wonderware, and OsiSoft PI}
+  \item {Supplementary Skills: SQL, Infobatch, Networking, and System Administration}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{bluebird bio}
+\descript{| Automation Engineer}
+\location{Jun 2018 – Mar 2020 | RTP, NC}
+\begin{tightemize}
+\sectionsep
+    \item {Greenfield project - advised and implemented a new control system for gene therapy manufacturing}
+    \item {Main skills: Allen Bradley PLC/PAC, FactoryTalk View SCADA, and OsiSoft PI}
+    \item {Supplementary Skills: RT Reports, and Networking}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Seqirus (formerly Novartis)}
+\descript{| Automation Engineer}
+\location{Mar 2015 – Jun 2018 | Holly Springs, NC}
+\begin{tightemize}
+\sectionsep
+    \item {Control systems maintenance, troubleshooting, improvements, and administration}
+    \item {Main skills: Allen Bradley PLC/PAC, Siemens PLC, Factory Talk View Machine Edition, DeltaV, and OsiSoft PI}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Zenith Technologies}
+\descript{| Junior Automation Engineer}
+\location{Mar 2011 - Mar 2015 | RTP, NC}
+\begin{tightemize}
+\sectionsep
+    \item {Control systems maintenance, troubleshooting, and on call support}
+    \item {Main skills: DeltaV}
+    \item {Supplementary Skills: Allen Bradley PLC}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Novartis Vaccines and Diagnostics}
+\descript{| Process Engineer}
+\location{Aug 2008 – Dec 2010 | Liverpool, UK}
+\sectionsep
+
+\runsubsection{DuPont de Nemours}
+\descript{| Engineering Coop}
+\location{Jan 2005 – Aug 2007 (Rotations) | Richmond, VA}
+\sectionsep
+
+\runsubsection{US Army}
+\descript{| Cavalry Scout - SGT}
+\location{Jan 2000 - Jan 2003 | Various Locations}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Projects}
+
+%\runsubsection{Chess Engine}
+%\descript{| C++}
+%\location{2018}
+%\begin{tightemize}
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices %posuere. Cras suscipit faucibus ullamcorper.
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
+%\end{tightemize}
+%\sectionsep
+
+%\runsubsection{Speech-enabled Chatbot}
+%\descript{| C\#, Microsoft Bot Framework}
+%\location{2018}
+%\begin{tightemize}
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit. Vestibulum vel odio in diam ultrices %posuere. Cras suscipit faucibus ullamcorper. 
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper venenatis nisi at suscipit.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2020	     & Finalist & Lorem Ipsum\\
+% 2018	     & $2^{nd}$ & Dolor Sit Amet\\
+% 2015	     & Finalist  & Cras posuere\\
+% \\
+% \end{tabular}
+% \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.25\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\sectionsep
+\location{Proficient:}
+R \textbullet{} Python \textbullet{} ladder logic \textbullet{} function block \textbullet{} sequential function chart  \\
+\sectionsep
+\location{Experienced:}
+SQL \textbullet{} SAS \textbullet{}  Markdown\\
+\sectionsep
+\sectionsep
+\subsection{Tools/Platforms}
+\sectionsep
+Git \textbullet{} Docker \textbullet{} DeltaV \textbullet{} Rockwell \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{North Carolina State University}
+\descript{Master's in Statistics}
+\location{Aug 2023 | Raleigh, NC}
+\location{ Cum. GPA: 3.6 / 4.0 }
+
+\sectionsep
+\subsection{Duke University}
+\descript{Master's in Engineering Management}
+\location{May 2014 | Durham, NC}
+\location{ Cum. GPA: 3.8 / 4.0 }
+\sectionsep
+
+\sectionsep
+\subsection{North Carolina State University}
+\descript{Bachelors of Science in Chemical Engineering}
+\location{May 2008 | Raleigh, NC}
+\location{ Cum. GPA: 3.8 / 4.0 }
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     REFERENCES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{References} 
+%\href{https://www.linkedin.com/company/john-doe/}{\textbf{John Doe}, Senior Software Developer, Tyrell Corp}
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} john.doe@email.com
+%}
+%\parbox{\wd0}{\box0}
+%\endgroup
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+%}
+%\parbox{\wd0}{\box0}\endgroup
+%\\
+%\sectionsep
+%\href{https://www.linkedin.com/company/john-doe/}{\textbf{Jane Doe}}, Senior Software Developer, Primatech 
+%\\
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1cm 0cm 0cm}]{icons/main/mail.png}\hspace{0.3cm} jane.doe@email.com
+%}
+%\parbox{\wd0}{\box0}
+%\endgroup
+%\begingroup
+%\setbox0=\hbox{
+%\includegraphics[scale=0.1,trim={0 1.25cm -0.4cm 0cm}]{icons/main/phone.png}\hspace{0.3cm}+19999999999
+%}
+%\parbox{\wd0}{\box0}\endgroup
+%\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+\subsection{Graduate}
+Statistical Learning \textbullet{}\\ 
+Regression \textbullet{}\\ 
+ANOVA \textbullet{} \\ 
+Data Science \textbullet{}\\
+Bayesian Analysis \\
+\sectionsep
+
+% \subsection{Undergraduate}
+
+% Database Management Systems \textbullet{}\\
+% Object Oriented Analysis and Design \textbullet{}\\
+% Artificial Intelligence and Expert Systems \textbullet{}\\
+% Scripting Languages and Web Tech \textbullet{}\\
+% Software Engineering \\
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
